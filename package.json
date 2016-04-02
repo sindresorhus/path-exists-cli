@@ -1,0 +1,50 @@
+{
+  "name": "path-exists-cli",
+  "version": "0.0.0",
+  "description": "Check if a path exists",
+  "license": "MIT",
+  "repository": "sindresorhus/path-exists-cli",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "bin": {
+    "path-exists": "cli.js"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "cli.js"
+  ],
+  "keywords": [
+    "cli-app",
+    "cli",
+    "path",
+    "exists",
+    "exist",
+    "file",
+    "filepath",
+    "fs",
+    "filesystem",
+    "file-system",
+    "access",
+    "stat"
+  ],
+  "dependencies": {
+    "meow": "^3.7.0",
+    "path-exists": "^2.1.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "execa": "^0.2.2",
+    "xo": "*"
+  },
+  "xo": {
+    "esnext": true
+  }
+}
