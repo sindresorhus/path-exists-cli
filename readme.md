@@ -1,6 +1,6 @@
 # path-exists-cli [![Build Status](https://travis-ci.org/sindresorhus/path-exists-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/path-exists-cli)
 
-> Check if a path exists
+> Check if a path exists, [cross-platform](https://github.com/sindresorhus/path-exists-cli/issues/1).
 
 
 ## Install
