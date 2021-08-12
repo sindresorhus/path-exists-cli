@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-'use strict';
-const meow = require('meow');
-const pathExists = require('path-exists');
+import process from 'node:process';
+import meow from 'meow';
+import {pathExistsSync} from 'path-exists';
 
 const cli = meow(`
 	Usage
@@ -9,13 +9,15 @@ const cli = meow(`
 
 	Example
 	  $ path-exists foo && echo "exists" || echo "doesn't exist"
-`);
+`, {
+	importMeta: import.meta,
+});
 
 const input = cli.input[0];
 
 if (!input) {
 	console.error('Specify a path');
-	process.exit(1);
+	process.exit(2);
 }
 
-process.exit(pathExists.sync(input) ? 0 : 1);
+process.exit(pathExistsSync(input) ? 0 : 1);
